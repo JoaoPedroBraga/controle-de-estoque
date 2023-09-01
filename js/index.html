@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Controle de Produtos</h1>
+    </header>
+    
+    <main>
+        <h2>Produtos</h2>
+        <span>Lista de Produtos</span>
+
+        <section class="card">
+            <div>
+                <label>Nome do produto:</label><br>
+                <input type="text" id="pdNome" placeholder="Iphone">
+            </div>
+            <div>
+                <label>Preço:</label><br>
+                <input type="text" id="pdPreco" placeholder="R$00,00">
+            </div>
+
+            <button onclick="produto.Adicionar()">Adicionar</button>
+            <button onclick="produto.Cancelar()" >Cancelar</button>
+        </section>
+
+        <section class="conteudo">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <TH>PREÇO</TH>
+                    <TH>REMOVER</TH>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
